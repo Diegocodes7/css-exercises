@@ -1,26 +1,47 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-.box-one {
-    background-color: #eb5757;
-    padding: 10px;
-    border: 20px solid #9B51E0;
-    height: 100px;
-    width: 100px;
-    margin: 60px;
+* {
+    margin: 0;
+    padding: 0;
     
 }
 
-.box-two {
-    background-color: #2D9CDB;
-    border: 0 solid #27AE60;
-    padding: 10px;
-    border: 30px solid #9B51E0;
+.box {
+    font-size: 2rem;
+    background-color: pink;
+    display: block;
+    /* BOX MODEL */
+    width: 300px;
     height: 100px;
-    width: 100px;
-    margin: 60px;
+    padding: 16px;
+    border: 5px solid black;
+    margin: 0;
 }
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-one {
+    box-sizing: content-box;
+    width: 700px;
+    height: 300px;
+
+    padding: 50px;
+    border: 30px solid black;
+}
+
+.box-two {
+    box-sizing: border-box;
+    width: 700px;
+    height: 300px;
+
+    padding: 50px;
+    border: 30px solid black;
+} */
+
+/* Border-box is the best one in terms of now changing the default set width and height values */
